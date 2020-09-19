@@ -52,17 +52,17 @@ public class LevelGenerator : MonoBehaviour
  {1,1,1,1,1,1,1,1,1,1,1,1,1,1},
  {2,0,0,0,0,0,0,0,0,0,0,0,0,0},
  {2,0,0,1,1,3,0,0,1,1,1,4,0,0},
- {2,0,0,0,0,0,0,0,0,0,2,2,0,0},
- {2,0,1,1,1,2,0,1,1,1,1,2,0,1},
+ {2,0,2,0,0,0,0,2,0,0,2,0,0,0},
+ {2,0,1,4,4,2,0,1,4,4,4,2,0,1},
  {2,0,0,0,0,0,0,0,0,0,0,0,0,0},
  {2,0,0,1,1,4,0,0,4,0,0,1,1,1},
- {2,0,1,1,1,2,0,0,0,0,1,1,1,4},
+ {2,0,1,4,4,2,0,2,0,0,1,1,1,4},
  {2,0,0,0,0,0,0,0,0,0,0,0,0,0},
- {2,1,1,1,1,0,0,0,1,1,1,3,0,0},
- {2,0,0,0,2,2,0,0,0,1,1,2,1,1},
- {2,0,0,0,2,2,0,0,0,0,0,0,0,0},
- {1,0,0,0,4,2,0,0,0,0,0,1,1,0},
- {1,1,1,1,1,4,0,1,2,0,0,0,0,0},
+ {2,4,4,4,4,4,0,0,1,1,1,3,0,0},
+ {2,0,0,0,2,0,0,0,0,1,1,2,1,1},
+ {2,0,0,0,2,0,0,0,0,0,0,0,0,0},
+ {1,0,0,0,4,0,0,0,0,0,0,1,1,0},
+ {4,4,4,4,4,4,0,1,2,0,0,0,0,0},
  {2,0,0,0,0,0,0,0,0,0,0,0,0,0},
  };
 
@@ -102,10 +102,10 @@ public class LevelGenerator : MonoBehaviour
             }
         }
 
-        tileParent.transform.rotation = Quaternion.Euler(0, 0, -90f);
+       tileParent.transform.rotation = Quaternion.Euler(0, 0, -90f);
 
-        GameObject tileParent2 = Instantiate(tileParent, new Vector2((Map.GetLength(0)* Width*2) - (Width *2.5f), 0), Quaternion.Euler(0, 180f,-90f));
-        tileParent2.name = "TileParent2";
+        //GameObject tileParent2 = Instantiate(tileParent, new Vector2((Map.GetLength(0)* Width*2) - (Width *2.5f), 0), Quaternion.Euler(0, 180f,-90f));
+        //tileParent2.name = "TileParent2";
 
 
 
