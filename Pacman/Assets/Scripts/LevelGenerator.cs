@@ -59,10 +59,10 @@ public class LevelGenerator : MonoBehaviour
   {2,0,2,4,4,3,0,2,0,0,2,4,4,0},
   {2,0,0,0,0,0,0,2,0,0,0,0,0,0},
   {2,4,4,4,4,0,0,2,2,4,4,0,0,0},
-  {2,0,0,0,2,0,0,2,1,1,1,4,1,1},
+  {2,0,0,0,2,0,0,2,1,1,1,4,1,2},
   {2,0,0,0,2,0,0,2,0,0,0,0,0,0},
-  {1,0,0,0,4,0,0,2,0,0,0,1,1,0},
-  {4,4,4,4,4,4,0,1,2,0,0,0,0,0},
+  {1,0,0,0,4,0,0,2,0,0,1,1,1,0},
+  {4,4,4,4,4,4,0,2,3,0,0,0,0,0},
   {2,0,0,0,0,0,0,0,0,0,0,0,0,0},
  };
 
@@ -104,74 +104,17 @@ public class LevelGenerator : MonoBehaviour
 
        tileParent.transform.rotation = Quaternion.Euler(0, 0, -90f);
 
-        //GameObject tileParent2 = Instantiate(tileParent, new Vector2((Map.GetLength(0)* Width*2) - (Width *2.5f), 0), Quaternion.Euler(0, 180f,-90f));
-        //tileParent2.name = "TileParent2";
+        GameObject tileParent2 = Instantiate(tileParent, new Vector2((Map.GetLength(0)* Width*2) - (Width *3f), 0), Quaternion.Euler(0, 180f,-90f));
+        tileParent2.name = "TileParent2";
+
+        GameObject tileParent3 = Instantiate(tileParent, new Vector2(0,-28), Quaternion.Euler(0, 180f, 90f));
+        tileParent3.name = "TileParent3";
+
+         GameObject tileParent4 = Instantiate(tileParent, new Vector2(27, -28), Quaternion.Euler(1, 360f,90f));
+        tileParent4.name = "TileParent4";
 
 
 
-        //   for (int row = 0; row < Map.GetLength(0); row++)
-        //    {
-        //        for (int col = 0; col < Map.GetLength(1); col++)
-        //        {
-        //            if (Map[row, col] == 0)
-        //            {
-        //                Instantiate(tilePrefabs[0], new Vector3(row, col, 0), Quaternion.identity);
-        //            }
-        //            else if (Map[row, col] == 1)
-        //            {
-        //                if (row == 9 && col ==0 )
-        //                    Instantiate(tilePrefabs[1], new Vector3(row, col, 0), Quaternion.Euler(0, 0, -180));
-        //                else if (row == 0)
-        //                    Instantiate(tilePrefabs[1], new Vector3(row, col, 0), Quaternion.Euler(0, 0, 90));
-
-        //                else
-        //                    Instantiate(tilePrefabs[1], new Vector3(row, col, 0), Quaternion.identity);
-
-        //            }
-        //            else if (Map[row, col] == 2)
-
-        //            {
-        //               if ( row == 1 || row == 2 || row == 3 || row == 4 || row == 5 || row == 6 || row == 7 || row == 8 ||row ==10|| row == 11 || row == 12)
-        //                    Instantiate(tilePrefabs[2], new Vector3(row, col, 0), Quaternion.identity);
-
-
-        //               else
-        //                Instantiate(tilePrefabs[2], new Vector3(row , col, 0), Quaternion.Euler(0,0,-90));
-        //            }
-        //            else if (Map[row, col] == 3)
-        //            {
-        //                Instantiate(tilePrefabs[3], new Vector3(row, col, 0), Quaternion.identity);
-        //            }
-        //            else if (Map[row, col] == 4)
-        //            {
-        //                if (row < 14)
-
-        //                    Instantiate(tilePrefabs[4], new Vector3(row, col, 0), Quaternion.Euler(0, 0, -90));
-        //                else
-
-        //                Instantiate(tilePrefabs[4], new Vector3(row, col, 0), Quaternion.identity);
-        //            }
-        //            else if (Map[row, col] == 5)
-        //            {
-        //                Instantiate(tilePrefabs[5], new Vector3(row, col, 0), Quaternion.identity);
-        //            }
-        //            else if (Map[row, col] == 6)
-        //            {
-        //                Instantiate(tilePrefabs[6], new Vector3(row, col, 0), Quaternion.identity);
-        //            }
-        //            else if (Map[row, col] == 7)
-        //            {
-        //                if (row == 0 && col== 13)
-        //                    Instantiate(tilePrefabs[7], new Vector3(row, col, 0), Quaternion.Euler(0, 0, 90));
-        //                else
-
-        //                Instantiate(tilePrefabs[7], new Vector3(row, col, 0), Quaternion.identity);
-        //            }
-
-
-
-        //        }
-        //    }
     }
 
 }
