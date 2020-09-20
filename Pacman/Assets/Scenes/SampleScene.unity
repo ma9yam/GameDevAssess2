@@ -241,7 +241,7 @@ MonoBehaviour:
   - {fileID: 4259158642853418694, guid: d5ec19539cd524720a748b981b995b3b, type: 3}
   - {fileID: 5873984333076451389, guid: a4af760d34294457497f8ab2d12eac0c, type: 3}
   - {fileID: 2084450719940852143, guid: a30c42aaa89ab4ec0b978f4034e06e4b, type: 3}
-  - {fileID: 7124491119107882394, guid: 2c67de30881b54dd28a269af7eff1d85, type: 3}
+  - {fileID: 5302386351917875254, guid: 594156f4153ad46a186b4363d4c30d8e, type: 3}
   - {fileID: 3149162452146641118, guid: c0c0029fe2e5c4378a2bc3d19f55cdf1, type: 3}
   Width: 1
   Height: 1
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18fd4d21ad9214a45873552f07bc37c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speedMetersPerSecond: 17.71
+  _speedMetersPerSecond: 10
 --- !u!212 &797644774
 SpriteRenderer:
   m_ObjectHideFlags: 0
