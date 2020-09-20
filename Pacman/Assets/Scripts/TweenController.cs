@@ -16,6 +16,8 @@ public class TweenController : MonoBehaviour
         target.MoveTo(new Vector3(x: 12, y: -1, z: 0),
             onComplete: () => target.MoveTo(new Vector3(x: 1, y: -1, z: 0),
              onComplete: () => target.MoveTo(new Vector3(x: 1, y: -8, z: 0),
-              onComplete: () => Debug.Log("done moving"))));
+              onComplete: () => target.MoveTo(new Vector3(x: 6, y: -8, z: 0),
+               onComplete: () => target.MoveTo(new Vector3(x: 6, y: -1, z: 0),
+              onComplete: () => Debug.Log("done moving"))))));
     }
 }
