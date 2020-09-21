@@ -5,10 +5,15 @@ using UnityEngine;
 
 public class TweenController : MonoBehaviour
 {
+  
     [SerializeField] private Moveable target;
+   
     private void Start()
     {
         MoveWithMover();
+      
+       
+        
     }
 
     private void MoveWithMover()
@@ -20,4 +25,6 @@ public class TweenController : MonoBehaviour
                onComplete: () => target.MoveTo(new Vector3(x: 6, y: -1, z: 0),
               onComplete: () => Debug.Log("done moving"))))));
     }
+    
+    
 }
